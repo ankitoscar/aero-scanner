@@ -35,22 +35,24 @@
             <div id="flight-depart">
               <div class="info-box">
                 <label for="airport">LEAVING FROM</label>
-                <select name="airport" id="dep-from">
+                <input list="dep-from" type="text">
+                <datalist id="dep-from">
                     <option value="CDG">Paris Charles de Gaulle Airport</option>
                     <option value="LHR">London Heathrow Airort</option>
                     <option value="SIN">Changi Intl' Airport</option>
                     <option value="JFK">New York John F. Kennedy Airport</option>
-                </select>
+                </datalist>
                 <div id="depart-res"></div>
               </div>
               <div class="info-box" id="arrive-box">
                 <label for="airport">ARRIVING AT</label>
-                <select name="airport" id="dep-to">
-                  <option value="CDG">Paris Charles de Gaulle Airport</option>
-                  <option value="LHR">London Heathrow Airort</option>
-                  <option value="SIN">Changi Intl' Airport</option>
-                  <option value="JFK">New York John F. Kennedy Airport</option>
-              </select>
+                <input list="dep-to" type="text">
+                <datalist id="dep-to">
+                    <option value="CDG">Paris Charles de Gaulle Airport</option>
+                    <option value="LHR">London Heathrow Airort</option>
+                    <option value="SIN">Changi Intl' Airport</option>
+                    <option value="JFK">New York John F. Kennedy Airport</option>
+                </datalist>
                 <div id="arrive-res"></div>
               </div>
             </div>
