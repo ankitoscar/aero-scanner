@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="{% static 'css/homepage.css' %}">
 </head>
 <body>
-   
+   <a href="{% url 'dashboard' %}">Go to dashboard</a>
     <div id="search-form">
         <div id="header">
           <h1>WELCOME TO AEROSCANNER</h1>
@@ -17,7 +17,8 @@
         <section>
           <div class="flight" id="flightbox">
             
-            <form id="flight-form">
+            <form id="flight-form" method="POST" enctype="multipart/form-data">
+            {% csrf_token %}  
             <!-- TRIP TYPE -->
             <div id="flight-type">
               <div class="info-box">
