@@ -33,13 +33,23 @@
             <!-- FROM/TO -->
             <div id="flight-depart">
               <div class="info-box">
-                <label for="">LEAVING FROM</label>
-                <input type="text" id="dep-from" />
+                <label for="airport">LEAVING FROM</label>
+                <select name="airport" id="dep-from">
+                    <option value="CDG">Paris Charles de Gaulle Airport</option>
+                    <option value="LHR">London Heathrow Airort</option>
+                    <option value="SIN">Changi Intl' Airport</option>
+                    <option value="JFK">New York John F. Kennedy Airport</option>
+                </select>
                 <div id="depart-res"></div>
               </div>
               <div class="info-box" id="arrive-box">
-                <label for="">ARRIVING AT</label>
-                <input type="text" id="dep-to" />
+                <label for="airport">ARRIVING AT</label>
+                <select name="airport" id="dep-to">
+                  <option value="CDG">Paris Charles de Gaulle Airport</option>
+                  <option value="LHR">London Heathrow Airort</option>
+                  <option value="SIN">Changi Intl' Airport</option>
+                  <option value="JFK">New York John F. Kennedy Airport</option>
+              </select>
                 <div id="arrive-res"></div>
               </div>
             </div>
